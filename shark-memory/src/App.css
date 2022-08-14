@@ -4,10 +4,20 @@
   height: 100vh;
 }
 
+@font-face {
+  font-family: 'LuckiestGuy';
+  src: url('./LuckiestGuy-Regular.ttf');
+}
+
 .header {
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 150px;
-  background-color: blue;
+  background-color: navy;
+  color: white;
+  font-size: 60px;
+  font-family: "LuckiestGuy";
 }
 
 .separation {
@@ -16,7 +26,8 @@
   justify-content: space-around;
   align-items: center;
   height: 20px;
-  background-color: grey;
+  background: rgb(125,125,125);
+  background: radial-gradient(circle, rgba(125,125,125,1) 0%, rgba(83,83,83,1) 100%); 
 }
 
 .circle {
@@ -37,12 +48,16 @@
 .main {
   display: flex;
   flex-direction: column;
-  background-color: aqua;
+  background-color: lightcyan;
   flex-grow: 1;
 }
 
 .footer {
   display: flex;
   height: 50px;
-  background-color: cadetblue;
+  background: rgb(125,125,125);
+  background: radial-gradient(circle, rgba(125,125,125,1) 0%, rgba(83,83,83,1) 100%);
+  justify-content: center;
+  align-items: center;
+  color: white; 
 }
