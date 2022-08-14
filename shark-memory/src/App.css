@@ -1,0 +1,48 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  height: 150px;
+  background-color: blue;
+}
+
+.separation {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20px;
+  background-color: grey;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+.fin {
+  height: 40px;
+  filter: invert(100)
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  flex-grow: 1;
+}
+
+.footer {
+  display: flex;
+  height: 50px;
+  background-color: cadetblue;
+}
