@@ -78,8 +78,8 @@
 
 .cards {
   display: flex;
-  max-width: 700px;
-  margin-top: 70px;
+  max-width: 900px;
+  margin-top: 50px;
   gap: 33px;
   flex-wrap: wrap;
 }
@@ -90,7 +90,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  height: 200px;
+  height: 180px;
   width: 200px;
 }
 
@@ -101,13 +101,13 @@
 
 p {
   margin: 2px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "LuckiestGuy";
 }
 
 .footer {
   display: flex;
-  height: 50px;
+  min-height: 50px;
   background: rgb(125,125,125);
   background: radial-gradient(circle, rgba(125,125,125,1) 0%, rgba(83,83,83,1) 100%);
   justify-content: center;

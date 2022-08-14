@@ -1,11 +1,10 @@
 import '../App.css';
-import bull from '../images/bull.jpg';
 
-function Card () {
+function Card (props) {
     return (
         <div className='card'>
-            <img src={bull} alt='shark' className='card-img'></img>
-            <p>Bull Shark</p>
+            <img src={props.img} alt='shark' className='card-img'></img>
+            <p>{props.name}</p>
         </div>
     )
 };
