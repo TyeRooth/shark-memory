@@ -1,10 +1,12 @@
 import '../App.css';
 
-function Scores () {
+function Scores (props) {
     return (
         <div className='scores'>
-            <div className='current-score shadow'>Current Score: 0</div>
-            <div className='best-score shadow'>Best Score: 0</div>
+            <div className={props.current === 12 ? "win-score shadow" : "current-score shadow"}>
+                Current Score: {props.current}
+            </div>
+            <div className='best-score shadow'>Best Score: {props.best}</div>
         </div>
     )
 };

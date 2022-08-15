@@ -14,18 +14,51 @@ import mako from '../images/mako.JPG';
 import tiger from '../images/tiger.jpg';
 import whale from '../images/whale.jpeg';
 import zebra from '../images/zebra.jpg';
+import { useState } from "react";
 
 function Main () {
-    let sharks = sharksArray;
+    const [sharks, setSharks] = useState(sharksArray)
     sharks.sort(() => Math.random() - 0.5);
+
+    const [currentScore, setCurrentScore] = useState(0);
+    const [bestScore, setBestScore] = useState(0);
+
+    function repeatClick () {
+        setCurrentScore(0);
+        let updatedSharks = [];
+        for (let i = 0; i < sharks.length; i++) {
+            let updatedShark = sharks[i];
+            updatedShark.clicked = false;
+            updatedSharks.push(updatedShark);
+        }
+        setSharks(updatedSharks);
+    };
+
+    function newClick (name) {
+        setCurrentScore(currentScore + 1);
+        //Current Score is not updated during function which is why currentScore + 1 is required
+        if (currentScore + 1 > bestScore) {
+            setBestScore(currentScore + 1);
+        };
+        let updatedSharks = [];
+        for (let i = 0; i < sharks.length; i++) {
+            let updatedShark = sharks[i];
+            if (sharks[i].name === name) {
+                updatedShark.clicked = true;
+            };
+            updatedSharks.push(updatedShark);
+        }
+        setSharks(updatedSharks);
+    };
     
     let sharkCards = sharks.map((shark) =>
-    <Card img={shark.img} name={shark.name}/>
+    <Card img={shark.img} name={shark.name} key={shark.name} clicked={shark.clicked}
+    goodClick={newClick} badClick={repeatClick}/>
     );
 
     return (
         <div className="main">
-            <Scores/>
+            <Scores current={currentScore} best={bestScore}/>
             <div className="cards">
                 {sharkCards}
             </div>
