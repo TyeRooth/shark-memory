@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/shark-memory/static/css/main.ac619f8d.css",
+    "main.js": "/shark-memory/static/js/main.93e1bcdf.js",
+    "static/js/787.0b919777.chunk.js": "/shark-memory/static/js/787.0b919777.chunk.js",
+    "static/media/zebra.jpg": "/shark-memory/static/media/zebra.1339fc95852be28ebcd9.jpg",
+    "static/media/tiger.jpg": "/shark-memory/static/media/tiger.4806f340c6cb368b51cb.jpg",
+    "static/media/whale.jpeg": "/shark-memory/static/media/whale.80e05af809a9fd39cd83.jpeg",
+    "static/media/greenland.jpg": "/shark-memory/static/media/greenland.e44c55268e74947e63b8.jpg",
+    "static/media/hammerhead.jpg": "/shark-memory/static/media/hammerhead.cef58fc70b73c1800341.jpg",
+    "static/media/bull.jpg": "/shark-memory/static/media/bull.9e2363c3a93d022dc72c.jpg",
+    "static/media/cookiecutter.jpg": "/shark-memory/static/media/cookiecutter.cbb31bfa8c99fd907704.jpg",
+    "static/media/mako.JPG": "/shark-memory/static/media/mako.2cb82db4149295005460.JPG",
+    "static/media/greatwhite.jpg": "/shark-memory/static/media/greatwhite.f53e0f35ddd579b3a166.jpg",
+    "static/media/lemon.jpg": "/shark-memory/static/media/lemon.1894494f182e035db6ed.jpg",
+    "static/media/caribbeanreef.jpg": "/shark-memory/static/media/caribbeanreef.62c219e36f671402ff75.jpg",
+    "static/media/LuckiestGuy-Regular.ttf": "/shark-memory/static/media/LuckiestGuy-Regular.fd5a8f5e455b026973fc.ttf",
+    "static/media/goblin.jpg": "/shark-memory/static/media/goblin.b400fcdde4e4afabca9f.jpg",
+    "index.html": "/shark-memory/index.html",
+    "main.ac619f8d.css.map": "/shark-memory/static/css/main.ac619f8d.css.map",
+    "main.93e1bcdf.js.map": "/shark-memory/static/js/main.93e1bcdf.js.map",
+    "787.0b919777.chunk.js.map": "/shark-memory/static/js/787.0b919777.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac619f8d.css",
+    "static/js/main.93e1bcdf.js"
+  ]
+}
